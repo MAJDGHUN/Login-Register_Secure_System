@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block title %}add{% endblock %}
+
+{% block content %}
+<h2>Add Friend</h2>
+<div>
+    <p>Your can add your friends below:</p>
+    
+    
+
+    <form action="{{ url_for('add') }}" method="post" autocomplete="off">
+        
+        <table>
+            
+            <tr>
+                <td>Username:</td>
+                
+                
+                <td><input type="text" name="friend"  id="friend"  placeholder="Username" required ></td>
+                
+                
+            </tr>
+            
+           
+        </table>
+        <div class="msg">{{ msg }}</div>
+        <input type="submit" value="Add" class="button">
+        
+    </form>
+    
+</div>
+{% endblock %}

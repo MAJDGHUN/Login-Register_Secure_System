@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block title %}Update{% endblock %}
+
+{% block content %}
+<h2>Profile Update</h2>
+<div>
+    <p>Your can update your account details  below:</p>
+    
+    
+
+    <form action="{{ url_for('update') }}" method="post" autocomplete="off">
+        
+        <table>
+            
+            <tr>
+                <td>Username:</td>
+                
+                
+                <td><input type="text" name="username"  id="username"  placeholder="Username" required ></td>
+                
+                
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password"  id="password"  placeholder="Password" required ></td>
+                
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"  id="email"  placeholder="Email" required ></td>
+                
+                
+            </tr>
+            <tr>
+                <td>Hobby:</td>
+                <td><input type="text" name="hobby"  id="hobby"  placeholder="Hobby" required ></td>
+               
+           
+       
+            </tr>
+           
+        </table>
+        <div class="msg">{{ msg }}</div>
+        <input type="submit" value="Apply" class="button">
+        
+    </form>
+    
+</div>
+{% endblock %}

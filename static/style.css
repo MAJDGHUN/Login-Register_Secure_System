@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    font-family: italic small-caps bold ,cursive;
+    font-size: 17px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+body {
+    background: linear-gradient(90deg, #5795a5 0%, #d9e7ff 100%);
+    margin: 0;
+}
+
+
+.login, .register {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+.login, .register {
+   width: 400px;
+   margin: 100px auto;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   display: block;
+ }
+
+ .login, .register:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+.button {
+    
+    border: none;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+
+
+
+
+
+.button{background-image: linear-gradient(to right, #004050 0%, #26daa4  51%, #005851  100%)}
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
+   border-radius: 10px;
+   display: block;
+
+}
+
+
+  
+
+
+.button h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login .links, .register .links {
+    display: flex;
+    padding: 0 15px;
+}
+.login .links a, .register .links a {
+    color: #000000;
+    text-decoration: none;
+    display: inline-flex;
+    padding: 0 10px 10px 10px;
+    font-weight: bold;
+}
+.login .links a:hover, .register .links a:hover {
+    color: #ffffff;
+}
+.login .links a.active, .register .links a.active {
+    border-bottom: 3px solid #042400;
+    color: #ffffff;
+}
+.login form, .register form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label, .register form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="text"], .login form input[type="email"], .register form input[type="password"], .register form input[type="text"], .register form input[type="email"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+
+
+.login form input[type="submit"], .register form input[type="submit"] {background-image: linear-gradient(to right, #002e49 0%, #4dafff  51%, #003441  100%)}
+.login form input[type="submit"], .register form input[type="submit"] {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 1px #eee;
+   border-radius: 5px;
+   display: block;
+ }
+
+
+
+.login form input[type="submit"]:hover, .register form input[type="submit"]:hover {
+    background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}
+
+
+
+
+
+
+
+.navtop {background-image: linear-gradient(to right, #002b33 0%, #33c9dd  51%, #00294b  100%)}
+.navtop {
+   margin: 0px;
+   padding: 8px 40px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 10px #eee;
+   
+   display: block;
+ }
+
+ .navtop:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+
+
+
+.navtop div {
+    display: flex;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100%;
+}
+.navtop div h1, .navtop div a {
+    display: inline-flex;
+    align-items: center;
+}
+.navtop div h1 {
+    flex: 1;
+    font-size: 30px;
+    padding: 0;
+   margin: 0;
+    color: #eaebed;
+    font-weight: bold;
+}
+.navtop div a {
+    padding:  20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.navtop div a i {
+    background-color: #555;
+   color: white;
+}
+.navtop div a:hover {
+    background-color: rgb(201, 201, 201);
+    color: white;
+}
+
+.navtop ul li a:hover:after {
+    width: 100%;
+}
+  
+.navtop.login ul li a {
+    transition: all 2s;
+}
+
+
+
+body.loggedin {
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.content {
+    width: 1000px;
+    margin: 0 auto;
+}
+.content h2 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    color: #275200;
+}
+.content > p, .content > div {
+    box-shadow: 0 0 5px 0 rgba(226, 16, 16, 0.1);
+    margin: 25px 0;
+    padding: 25px;
+  background-color: #fff;
+}
+.content > p table td, .content > div table td {
+  padding: 5px;
+}
+.content > p table td:first-child, .content > div table td:first-child {
+  font-weight: bold;
+  color: #140d0d;
+  padding-right: 15px;
+}
+.content > div p {
+  padding: 5px;
+  margin: 0 0 10px 0;
+}

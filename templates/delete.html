@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block title %}Delete{% endblock %}
+
+{% block content %}
+<h2>Profile Delete</h2>
+<div>
+    <p>Your can delete your account by clicking on the button delete below:</p>
+    <head>
+        <meta http-equiv="refresh" content="10;url=https://localhost:5000/pythonlogin/" />
+    </head>
+
+    
+
+    <form action="{{ url_for('delete') }}" method="post" autocomplete="off">
+        
+        
+        
+        <input type="submit" value="delete" class="button">
+        <div class="msg">{{ msg }}</div>
+  
+        
+    </form>
+    
+</div>
+{% endblock %}
